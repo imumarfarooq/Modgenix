@@ -5,18 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modgenix - Revolutionizing Industries with Computer Vision</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        // Dynamically inject the header content into the body
+        document.addEventListener("DOMContentLoaded", () => {
+            const headerContent = `
+                <header>
+                    <div class="logo">
+                        <img src="logo.png" alt="Modgenix Logo">
+                    </div>
+                    <nav>
+                        <a href="#about">About Us</a>
+                        <a href="#industries">Industries</a>
+                        <a href="#team">Team</a>
+                        <a href="#appointment">Book Appointment</a>
+                    </nav>
+                </header>`;
+            document.body.insertAdjacentHTML("afterbegin", headerContent);
+        });
+    </script>
 </head>
 <body>
-    <header>
-        <h1 class="logo">Modgenix</h1>
-        <nav>
-            <a href="#about">About Us</a>
-            <a href="#industries">Industries</a>
-            <a href="#team">Team</a>
-            <a href="#appointment">Book Appointment</a>
-        </nav>
-    </header>
-    
     <div class="slider">
         <img src="image1.jpg" alt="Slider Image 1">
         <img src="image2.jpg" alt="Slider Image 2">
@@ -46,21 +54,6 @@
                 <h3>Retail</h3>
                 <p>Improving inventory management with AI-powered tools.</p>
             </div>
-            <div class="industry-card">
-                <img src="transportation.jpg" alt="Transportation">
-                <h3>Transportation</h3>
-                <p>Advancing autonomous navigation with smart object detection.</p>
-            </div>
-            <div class="industry-card">
-                <img src="agriculture.jpg" alt="Agriculture">
-                <h3>Agriculture</h3>
-                <p>Optimizing crop monitoring with aerial imagery analysis.</p>
-            </div>
-            <div class="industry-card">
-                <img src="finance.jpg" alt="Finance">
-                <h3>Finance</h3>
-                <p>Securing transactions with biometric-based fraud prevention.</p>
-            </div>
         </div>
     </section>
     
@@ -77,18 +70,12 @@
                 <h3>Jane Smith</h3>
                 <p>CTO</p>
             </div>
-            <div class="team-member">
-                <img src="team3.jpg" alt="Emily Brown">
-                <h3>Emily Brown</h3>
-                <p>Head of AI</p>
-            </div>
         </div>
     </section>
     
     <section id="appointment">
         <h2>Book an Appointment</h2>
         <div class="calendar">
-            <!-- Embed your calendar script or integration here -->
             <p>[Calendar integration goes here]</p>
         </div>
     </section>
